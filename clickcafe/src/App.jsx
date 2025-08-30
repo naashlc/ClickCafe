@@ -29,7 +29,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      {/* overlay solo en Home */}
+      {/* overlay solo en Home "Cabro el que lo lea" */}
       <Navbar overlay={isHome} onOpenCart={() => setOpenCart(true)} count={cart.reduce((a, b) => a + b.quantity, 0)} />
 
       <main className="flex-1">
