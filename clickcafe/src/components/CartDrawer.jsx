@@ -18,7 +18,7 @@ export default function CartDrawer({ open, onClose, cart, remove, changeQuantity
               <img src={p.image} alt={p.name} className="w-16 h-16 rounded object-cover"/>
               <div className="flex-1">
                 <div className="font-medium">{p.name}</div>
-                <div className="text-sm text-cafe-900/70">${p.price.toFixed(2)}</div>
+                <div className="text-sm text-cafe-900/70">S/{p.price.toFixed(2)}</div>
                 <div className="flex items-center gap-2 mt-1">
                   <button onClick={()=>changeQuantity(p.id, -1)} className="px-2 border rounded">-</button>
                   <span>{p.quantity}</span>
@@ -32,7 +32,7 @@ export default function CartDrawer({ open, onClose, cart, remove, changeQuantity
         <div className="p-4 border-t">
           <div className="flex items-center justify-between mb-3">
             <span className="font-medium">Total</span>
-            <span className="font-semibold">${total.toFixed(2)}</span>
+            <span className="font-semibold">S/{total.toFixed(2)}</span>
           </div>
           <button className="w-full boton-dorado">Pagar</button>
         </div>
